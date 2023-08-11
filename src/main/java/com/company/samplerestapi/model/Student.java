@@ -1,10 +1,23 @@
 package com.company.samplerestapi.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "students")
 public class Student {
+    @Id
+    @Column(name = "rno")
     private String rno;
+    @Column(name = "name")
     private  String name;
+    @Column(name = "stream")
     private String stream;
+    @Column(name = "dept")
     private String dept;
+    public Student(){}
     public Student(String rno, String name, String stream, String dept){
         this.rno = rno;
         this.name = name;
