@@ -17,7 +17,7 @@ public class Student {
     private String stream;
     @Column(name = "dept")
     private String dept;
-    public Student(){}
+    public Student(){}   //for security purpose
     public Student(String rno, String name, String stream, String dept){
         this.rno = rno;
         this.name = name;
